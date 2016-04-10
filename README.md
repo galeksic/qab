@@ -13,3 +13,20 @@ int  NBR_REQUESTS = 2000;
 ```
 
 That's why it is "quick".
+
+Build:
+
+```
+gcc -O2 qab.c -o qabc -lpthread
+```
+
+Make it available just for you or at the system level. (Optional, of course.)
+
+```
+mv qabc ~/bin
+```
+
+```
+sudo chown root:root qabc
+sudo mv qabc /usr/local/bin
+```
